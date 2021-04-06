@@ -72,6 +72,66 @@ img {
   clear: both;
 }
 
+/* MEDIA QUERY < 768px */
+@media screen and (max-width: 768px){
+  * {
+    margin: 0;
+  }
+
+  #lezioni .row,
+  #steps .row,
+  #why .row {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  #lezioni .row,
+  #why .row {    
+    background-color: #f2f2cd;
+  }
+
+  #lezioni .row > h1,
+  #steps .row > h1,
+  #why .row > h1 {
+    padding: 10px 0;
+    font-size: 26px;
+  }
+
+  #lezioni .row > .left,
+  #lezioni .row > .right,
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third {
+    float: none;
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    padding: 10px 0;
+  }
+
+  #steps .row > .left,
+  #steps .row > .central {
+    width: calc(50% - 20px);
+    margin: 0 10px;
+    padding: 10px 0;
+  }
+
+  #steps .row > .right {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    padding-bottom: 10px;
+  }
+
+  #lezioni .row img,
+  #steps .row img {
+    height: 150px;
+  }
+
+  #why .row img {
+    height: 100px;
+    padding: 20px;
+  }
+}
+
 /* MEDIA QUERY < 420px */
 @media screen and (max-width: 420px) { 
   * {
